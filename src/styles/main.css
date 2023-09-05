@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: Roboto, serif;
+    background: linear-gradient(-45deg, #574d4a, #61404d, #114558, #84a79f);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    height: 100vh;
+}
+
+.navbar-brand img {
+    width: 45px;
+    filter: invert();
+}
+
+.imgfix {
+    width: 96%;
+}
+
+.btn {
+    background-color: rgb(46, 46, 46);
+    border-color: rgb(46, 46, 46);
+    border-radius: 10px;
+}
+
+.sidebar {
+    color: rgb(0, 0, 0);
+}
+
+.card-text1 {
+    animation: textleft 1s ease 0s 1 normal forwards;
+}
+
+.carousel-caption {
+    border-radius: 10px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes textleft {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
